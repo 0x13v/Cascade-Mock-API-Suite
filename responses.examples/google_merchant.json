@@ -1,0 +1,9 @@
+{
+    "config": {
+        "attributes": []
+    },
+    "return": {
+        "success": true,
+        "data": "{{body}}"
+    }
+}

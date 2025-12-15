@@ -1,0 +1,16 @@
+{
+  "config": {
+    "attributes": [
+      "what",
+      "example"
+    ]
+  },
+  "return": {
+    "success": true,
+    "message": "Dynamic configuration endpoint",
+    "data": {
+        "test": "{{what}}",
+        "test2": "{{example}}"
+    }
+  }
+}
