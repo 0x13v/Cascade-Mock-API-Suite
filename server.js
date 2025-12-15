@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const apiRoutes = require('./routes/api');
 
@@ -16,6 +17,9 @@ app.use((req, res, next) => {
 
 app.use('/api', apiRoutes);
 
-app.listen(3000, () => {
-    console.log('API running on http://localhost:3000');
+const PORT = process.env.PORT || 3001;
+const HOST = process.env.HOST || 'http://localhost';
+
+app.listen(PORT, HOST, () => {
+    console.log(`API running on ${HOST}:${PORT}`);
 });
